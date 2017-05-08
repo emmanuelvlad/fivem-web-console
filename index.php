@@ -10,7 +10,7 @@
       $(document).ready(function() {
         var firstLoad = 1
 
-         function functionToLoadFile(){
+         function loadLogs(){
            var bottom = $('#content').prop('scrollHeight')
            $.get({
              url: "<?php echo $log_file; ?>",
@@ -23,10 +23,10 @@
                $("#content").animate({ scrollTop: $('#content').prop('scrollHeight') }, 0);
                firstLoad = 0
              }
-             setTimeout(functionToLoadFile, 1000);
+             setTimeout(loadLogs, 1000);
            });
          }
-         setTimeout(functionToLoadFile, 10);
+         setTimeout(loadLogs, 10);
 
          $('#rcon').keyup(function(e) {
            if (e.keyCode === 13) {
