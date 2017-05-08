@@ -45,8 +45,8 @@ console #content
   width: calc(100% - 10px);
   margin-bottom: 25px;
   word-break: break-word;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 console #content::-webkit-scrollbar {
