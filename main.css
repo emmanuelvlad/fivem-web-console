@@ -10,6 +10,7 @@ html, body
   width: 975px;
   margin: auto;
   font-family: Arial;
+  text-align: center;
 }
 
 
@@ -31,7 +32,7 @@ console
   margin: auto;
   height: 500px;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
 }
 
 console #content
@@ -46,7 +47,6 @@ console #content
   word-break: break-word;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
-  text-align: left;
 }
 
 console #content::-webkit-scrollbar {
