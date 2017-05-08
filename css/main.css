@@ -1,0 +1,93 @@
+/*
+** ---------------------------------------------------------------------------
+**                                GENERAL
+** ---------------------------------------------------------------------------
+*/
+
+html, body
+{
+  background-color: #fafafa;
+  width: 975px;
+  margin: auto;
+  font-family: Arial;
+}
+
+
+/*
+** ---------------------------------------------------------------------------
+**                                CONSOLE
+** ---------------------------------------------------------------------------
+*/
+
+console
+{
+  position: relative;
+  background: #111;
+  border-radius: 5px;
+  color: #ccc;
+  display: block;
+  padding: 15px 10px;
+  width: 800px;
+  margin: auto;
+  height: 500px;
+  overflow: hidden;
+  text-align: center;
+}
+
+console #content
+{
+  position: absolute;
+  bottom: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: calc(100% - 25px);
+  width: calc(100% - 10px);
+  margin-bottom: 25px;
+  word-break: break-word;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+  text-align: left;
+}
+
+console #content::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+console #content::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+console #content::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border-radius: 100px;
+}
+
+console #content::-webkit-scrollbar-track {
+  background: #666666;
+}
+
+console #content::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+console input
+{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  height: 25px;
+  background-color: #333;
+  border: 0;
+  padding-left: 10px;
+}
+
+console #rcon:focus
+{
+  outline: none!important;
+  box-shadow: none!important;
+  border: 0!important;
+}
